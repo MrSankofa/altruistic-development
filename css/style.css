@@ -308,6 +308,12 @@ body.active-preloader-ovh {
   width: 100%;
   z-index: 999;
 }
+
+#headerText {
+
+  color: tomato;
+  line-height: 1;
+}
 .header-navigation .thm-container {
   position: relative;
 }
@@ -321,6 +327,11 @@ body.active-preloader-ovh {
 .header-navigation .thm-container .navbar-brand {
   height: auto;
   padding: 0px 0;
+}
+
+.navbar-brand img {
+  width: 1000%;
+  height: 1000%;
 }
 .header-navigation .thm-container .navbar-brand .default-logo {
   display: inline-block;
@@ -1817,9 +1828,23 @@ body.active-preloader-ovh {
   max-width: 1600px;
 }
 
-/************************** 
-* 9. brand styles 
-***************************/
+@media only screen and (max-width: 900px) and (min-width: 700px)  {
+  #headerText {
+    font-size: 175%;
+    color: tomato;
+    line-height: 1;
+  }
+}
+@media (min-width: 901px) {
+  #headerText {
+    font-size: 193%;
+  }
+}
+
+
+  /**************************
+  * 9. brand styles
+  ***************************/
 .brand-carousel {
   text-align: center;
   padding: 52px 0;
